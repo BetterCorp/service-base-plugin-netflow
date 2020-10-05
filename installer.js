@@ -1,7 +1,7 @@
-exports.default = ( jsonConfig ) => {
+exports.default = ( jsonConfig, pluginName ) => {
   jsonConfig.plugins = jsonConfig.plugins || {};
-  jsonConfig.plugins.netflow = jsonConfig.plugins.netflow || {};
-  jsonConfig.plugins.netflow.port = jsonConfig.plugins.netflow.port || 2055;
+  jsonConfig.plugins[ pluginName ] = jsonConfig.plugins[ pluginName ] || {};
+  jsonConfig.plugins[ pluginName ].port = jsonConfig.plugins[ pluginName ].port || 2055;
 
   return jsonConfig;
 }
