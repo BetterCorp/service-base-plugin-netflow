@@ -4,6 +4,10 @@
   "repository": {
     "url": "https://github.com/BetterCorp/service-base-plugin-netflow"
   },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=16.0.0"
+  },
   "scripts": {
     "dev": "nodemon -L --watch src/**/*.ts --watch plugins/**/*.ts --exec ts-node src/index.ts",
     "start": "node lib/index.js",
