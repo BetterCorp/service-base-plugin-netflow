@@ -2,18 +2,15 @@
   "name": "@bettercorp/service-base-plugin-netflow",
   "license": "AGPL-3.0-only",
   "repository": {
-    "url": "https://gitlab.com/BetterCorp/public/service-base-plugin-netflow"
+    "url": "https://github.com/BetterCorp/service-base-plugin-netflow"
   },
   "scripts": {
     "dev": "nodemon -L --watch src/**/*.ts --watch plugins/**/*.ts --exec ts-node src/index.ts",
     "start": "node lib/index.js",
-    "build": "tsc",
-    "deploy": "npm publish",
-    "postinstall": "node ../service-base/install-plugin.js"
+    "build": "tsc"
   },
   "files": [
-    "lib/**/*",
-    "installer.js"
+    "lib/**/*"
   ],
   "main": "lib/index.js",
   "version": "1.1.1-test",
